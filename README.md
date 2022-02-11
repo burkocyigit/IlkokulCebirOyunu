@@ -1,3 +1,3 @@
-# Toplama Oyunu
+# Addition Game App
 
-Çıkan işlemin sonucunun yazdığı balona tıklandığında skor kazanılan 60 saniyeyle sınırlı basit bir oyun
+# An Android simple game with basic addition operations, player earns a score when touches the balloon which its correct answer written on. Limited to 60 seconds.
