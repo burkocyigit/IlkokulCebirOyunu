@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     NumberClass numberClass;
     Random random = new Random();
     int score=0;
-    int
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
