@@ -15,7 +15,16 @@ public class FinishScreen extends AppCompatActivity {
         setContentView(R.layout.activity_finish_screen);
         Intent intent = getIntent();
         TextView textView = findViewById(R.id.finishScore);
+        TextView cevaplanan = findViewById(R.id.cevaplanan);
+        TextView dogru = findViewById(R.id.dogru);
+        TextView yanlis = findViewById(R.id.yanlis);
+        int cevaplananSayisi = intent.getIntExtra("question", 0);
+        int dogruSayisi = intent.getIntExtra("correct", 0);
+        int yanlisSayisi = cevaplananSayisi - dogruSayisi;
         int score = intent.getIntExtra("score", 31);
+        cevaplanan.setText("Cevaplanan : " + cevaplananSayisi);
+        dogru.setText("Doğru : " + dogruSayisi);
+        yanlis.setText("Yanlış : " + yanlisSayisi);
         textView.setText("Skorun : " + score);
     }
 
